@@ -18,6 +18,7 @@
 - **Spring Boot**: Framework używany do budowy aplikacji.
 - **Maven**: Narzędzie do zarządzania zależnościami i budowy aplikacji.
 - **PostgreSQL**: Relacyjna baza danych do przechowywania danych firmowych.
+- **IntelliJ IDE**: środowisko programistyczne (IDE) 
 - **Docker** oraz **Docker Compose** narzędzia do uruchomienia aplikacji w kontenerach.
 - **Swagger**: Dokumentacja i testowanie API.
 - **JUnit & Mockito**: Frameworki do testowania aplikacji.
@@ -64,7 +65,8 @@ Dokumentacja API, wraz z możliwością testowania, jest dostępna pod adresem:
 ### 1. Konfiguracja Dockera
 
 Aplikacja jest skonfigurowana do uruchamiania za pomocą Dockera, co ułatwia wdrażanie i zarządzanie zależnościami.
-Plik Docker Compose. Plik **docker-compose.yml** zawiera konfigurację dla aplikacji oraz bazy danych PostgreSQL.
+Plik **docker-compose.yml** zawiera konfigurację dla aplikacji oraz bazy danych PostgreSQL. 
+Plik **Dockerfile** to plik tekstowy używany do automatyzacji procesu budowania obrazów Docker
 
 ### 2. Konfiguracja bazy danych
 
