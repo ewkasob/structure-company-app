@@ -30,7 +30,6 @@ Aby sklonować repozytorium z GitHub:
 
 ```bash
 git clone https://github.com/ewkasob/structure-company-app.git
-cd structure-company-app
 ```
 
 ### 2. Uruchamianie aplikacji z Dockerem
