@@ -14,7 +14,7 @@
 
 ## Technologie
 
-- **Java 21**: Najnowsza wersja języka Java.
+- **Java 21**: Wersja języka Java.
 - **Spring Boot**: Framework używany do budowy aplikacji.
 - **Maven**: Narzędzie do zarządzania zależnościami i budowy aplikacji.
 - **PostgreSQL**: Relacyjna baza danych do przechowywania danych firmowych.
@@ -39,7 +39,6 @@ Aby uruchomić aplikację z bazą danych PostgreSQL za pomocą Dockera:
 ```bash
 docker-compose up --build
 ```
-
 Aplikacja będzie dostępna pod adresem **http://localhost:8085**
 
 Aby zatrzymać kontenery, uruchom:
@@ -47,6 +46,7 @@ Aby zatrzymać kontenery, uruchom:
 ```bash
 docker-compose down
 ```
+
 ### 3. Uruchamianie testów
 
 W aplikacji mamy dostępne testy:
@@ -54,7 +54,7 @@ W aplikacji mamy dostępne testy:
 - StructureCompanyApiIntegrationTest.java - testy integracyjne
 
 Przed uruchomieniem testów należy skonfigurować połączenie do bazy danych w pliku **application.properties**.
-Aby uruchomić testy jednostkowe i integracyjne, użyj polecenia:
+Aby uruchomić testy jednostkowe i integracyjne, należy użyć polecenia:
 
 ```bash
 mvn test
@@ -63,15 +63,15 @@ mvn test
 ### 4. Dokumentacja Swagger
 
 Dokumentacja API, wraz z możliwością testowania, jest dostępna pod adresem:
-
 **http://localhost:8085/swagger-ui.html**
+
 ## Konfiguracja
 
 ### 1. Konfiguracja Dockera
 
 Aplikacja jest skonfigurowana do uruchamiania za pomocą Dockera, co ułatwia wdrażanie i zarządzanie zależnościami.
 Plik **docker-compose.yml** zawiera konfigurację dla aplikacji oraz bazy danych PostgreSQL. 
-Plik **Dockerfile** to plik tekstowy używany do automatyzacji procesu budowania obrazów Docker
+Plik **Dockerfile** to plik tekstowy używany do automatyzacji procesu budowania obrazów Docker.
 
 ### 2. Konfiguracja bazy danych
 
@@ -81,7 +81,7 @@ Dane konfiguracyjne znajdują się w pliku **application.properties**.
 ## Punkty końcowe API
 
    - **GET /api/structure/companies**: Pobiera listę wszystkich firm.
-   - **GET /api/structure/companies/{id}**: Pobiera szczegóły konkretnej firmy na podstawie jej ID.
+   - **GET /api/structure/companies/{id}**: Pobiera szczegóły konkretnej firmy na podstawie jej id.
    - **POST /api/structure/companies**: Tworzy nową firmę.
-   - **PUT /api/structure/companies/{id}**: Aktualizuje dane istniejącej firmy.
-   - **DELETE /api/structure/companies/{id}**: Usuwa firmę.
+   - **PUT /api/structure/companies/{id}**: Aktualizuje dane istniejącej firmy dla danego id.
+   - **DELETE /api/structure/companies/{id}**: Usuwa firmę dla id firmy.
