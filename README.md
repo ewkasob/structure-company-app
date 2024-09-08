@@ -49,6 +49,11 @@ docker-compose down
 ```
 ### 3. Uruchamianie testów
 
+W aplikacji mamy dostępne testy:
+- StructureCompanyServiceTest.java - testy jednostkowe 
+- StructureCompanyApiIntegrationTest.java - testy integracyjne
+
+Przed uruchomieniem testów należy skonfigurować połączenie do bazy danych w pliku **application.properties**.
 Aby uruchomić testy jednostkowe i integracyjne, użyj polecenia:
 
 ```bash
@@ -71,7 +76,7 @@ Plik **Dockerfile** to plik tekstowy używany do automatyzacji procesu budowania
 ### 2. Konfiguracja bazy danych
 
 Aplikacja domyślnie jest skonfigurowana do pracy z bazą danych PostgreSQL.
-Dane konfiguracyjne znajdują się w pliku **application.yml**.
+Dane konfiguracyjne znajdują się w pliku **application.properties**.
 
 ## Punkty końcowe API
 
